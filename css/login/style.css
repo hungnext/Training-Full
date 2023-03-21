@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;    
+    height:  100vh;
+    overflow: hidden;
+    background: #333 url('/img/2.jpg') no-repeat center center/cover;
+
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.center form{
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #cccccc;    
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height:  40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 100%;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+/* .pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+
+} */
+.pass:hover{
+    text-decoration: underline;
+}
+input[type="submit"] {
+    background-color: #58abb9; /* Màu nền */
+    border: none; /* Không có viền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Khoảng cách giữa nút và văn bản bên trong */
+    text-align: center; /* Canh giữa văn bản bên trong */
+    text-decoration: none; /* Không có đường kẻ chân cho văn bản */
+    display: inline-block; /* Cho phép hiển thị nút trên cùng một dòng */
+    font-size: 16px; /* Cỡ chữ */
+    margin: 4px 2px; /* Khoảng cách giữa các nút */
+    cursor: pointer; /* Biến con trỏ thành một chiếc tay trỏ khi người dùng di chuột qua nút */
+    width: 100%;
+    border-radius: 25px;
+ 
+}
+input[type="submit"]:hover{
+    border-color: #769dd6;
+    transition: .10s8;
+}
+.signup_link{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+}
+.sigup_link a{
+    color: #e7e7e7;
+    text-decoration: none;
+}
+.sigup_link a:hover{
+    text-decoration: underline;
+}
+/* .background-image{
+    filter: brightness(50%);
+} */
