@@ -25,6 +25,7 @@ body{
 .center form{
     padding: 0 50px;
     box-sizing: border-box;
+    
 }
 form .txt_field{
     position: relative;
@@ -114,3 +115,12 @@ input[type="submit"]:hover{
 /* .background-image{
     filter: brightness(50%);
 } */
+
+input.button {
+    width: 150px;
+  height: auto;
+}
+.inputbutton {
+    width: 100%;
+    text-align: center;
+}
